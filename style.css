@@ -1,0 +1,62 @@
+#root div div {
+
+    margin: 3vh;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation: bounceInDown 3s linear 0.5s infinite alternate; 
+}
+
+#root{
+  height: 70vh;
+  overflow: hidden;
+  margin-top: 30vh;
+}
+
+#center{
+left: 50%;
+}
+
+#out-center{
+  left:45%;
+}
+
+.circ{
+  background: mediumvioletred;
+  position: relative;
+}
+
+.circ-bord{
+  background: white;
+  border: 1vh solid mediumvioletred;
+  position: relative;
+}
+
+@keyframes bounceInDown {
+  0% {
+    -webkit-transform:translateY(-100%);
+    opacity: 0.2;
+  }
+  20% {
+    -webkit-transform:translateY(100%);
+    opacity: 0.4;
+    }
+  40% {
+    -webkit-transform:translateY(-100%);
+    opacity: 0.4;
+  }
+  60%{    
+    -webkit-transform:translateY(100%);
+    opacity: 0.5;
+  } 
+  70%{    
+    -webkit-transform:translateY(-100%);
+    opacity: 0.8;
+  } 
+  80% {
+    -webkit-transform:translateY(100%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform:translateY(-100%);
+  }
+}
